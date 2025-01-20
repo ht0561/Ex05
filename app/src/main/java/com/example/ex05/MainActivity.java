@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button btn;
     TextView textV;
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
-        textV.setTextColor(Color.RED);
-        textV.setText("Oh, yea, I've been clicked!");
+        textV.setTextSize(+5);
+        textV.setText("This is a click number:"+ count);
+        count++;
     }
 }
