@@ -26,8 +26,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void go(View view) {
-        textV.setTextSize(+5);
-        textV.setText("This is a click number:"+ count);
-        count++;
+        textV.setWidth(+2);
+        if (count<6){
+            textV.setText("This is a click number:"+ count);
+            count++;
+        if (count==6){
+            textV.setText("Enough to click. Go to new start!");
+            count=0;
+
+
+
+
+            }
+
+        }
+
+
     }
 }
